@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+<style>
+
+    /* 
+     #=id
+    .=class
+     :=Pseudoclasses
+    ::=pseudo-elements
+    >=children
+    */
+
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: brown;
+        }
+        a:visited {
+            color: darkred;
+           
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: darkgoldenrod;
+        }
+      
+        .especial{
+            background-color: rgba(134, 34, 34, 0.596);
+        }
+      
+        .especial::after{
+            content: '👈';
+            
+        }
+
+        .especial::before{
+            content:'👉' ;
+        }
+
+        
+    </style>
+    <title> Links</title>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+         <li><a href="https://www.youtube.com/">Youtube</a></li>
+         <li><a  href="https://www.netflix.com/browse"class="especial"> Netflix</a></li>
+         <li><a href="https://www.canva.com/pt_pt/">Canvas</a></li>
+    </ul>
+    
+</body>
+</html>
